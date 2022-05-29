@@ -1,0 +1,339 @@
+*{
+    margin: 0px;
+}
+
+body{
+    background-color: black;
+    font-family: 'Oxygen';
+    background-image: url('../images/bg-cave.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: bottom;
+}
+
+a{
+    text-decoration: none;
+    color: rebeccapurple;
+}
+
+p{
+    color: white;
+    font-size: 16px;
+    font-family: 'Oxygen';
+}
+
+hr{
+    border-color: darkred;
+}
+
+h1{
+    color: rebeccapurple;
+    font-size: 45px;
+    font-family: 'New Rocker';
+}
+
+h2{
+    color: rebeccapurple;
+    font-size: 25px;
+    font-family: 'Oxygen';
+}
+
+h3{
+    color: white;
+    font-size: 18px;
+    font-family: 'Oxygen';
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+
+/*Menu Principal*/
+
+.menu-header-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+    margin-bottom: 20px;
+}
+
+.logo-header{
+    display: flex;
+}
+
+.img-logo-header{
+    width: 100%;
+}
+
+.menu-header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-header a{
+    font-weight: bold;
+    padding: 10px;
+}
+
+.menu-header a:hover{
+    color: darkred;
+    text-decoration: overline;
+}
+
+
+/*Seccion Conciertos*/
+
+.section-conciertos{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.section-conciertos h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.grid-conciertos{
+    background-color: #7f7f7f57;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.img-conciertos{
+    width: 300px;
+    height: 380px;
+}
+
+
+/*Seccion Noticias*/
+
+.section-noticias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.section-noticias h1{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.grid-noticias{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column-noticias{
+    background-color: #7f7f7f57;
+    margin: 0px 10px 0px 10px;
+    padding: 10px;
+}
+
+
+/*Seccion Agenda*/
+
+.section-agenda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.grid-agenda{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/*Seccion Lanzamiento*/
+
+.section-lanzamientos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.section-lanzamientos h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.section-lanzamientos h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;    
+}
+
+.grid-lanzamientos{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 10px 0px 10px;
+    height: 100%;
+}
+
+.grid-video-lanzamiento{
+    display: grid;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.img-lanzamientos{
+    width: 100%;
+}
+
+.box-img-lanzamientos{
+    margin: 0px 10px 0px 10px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+}
+
+.box-p-lanzamientos{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
+}
+
+.box-playlist-lanzamientos{    
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+}
+
+
+/*Seccion Contacto*/
+
+.section-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form-contacto{
+    background-color: #7f7f7f57;
+    padding: 3rem;
+    width: 300px;
+    height: 450px;
+    box-shadow: 6px 11px 13px -2px rgb(0 0 0 / 30%);
+    margin-bottom: 1.5rem;
+    margin-top: 20px;
+}
+
+.fas{
+    margin: 5px 10px 5px 10px;
+    color: rebeccapurple;
+}
+
+.group-form-contacto{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.input-group-form-contacto{
+    width: 18rem;
+    height: 1.8rem;
+    border-block: none;
+    border-color: #ffffff00;
+}
+
+.submit-form-contacto{    
+    background-color: darkred;
+    color: #fff;
+    border-color: rgba(0, 0, 0, 0.158);
+    width: 100px;
+    height: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    margin-top: 1.5rem;
+    transition: background-color .5s ease-in;    
+}
+
+.terminos-form-contacto{
+    color: firebrick;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/*Footer*/
+
+footer{
+    background-color: black;
+}
+
+footer p{
+    color: darkred;
+    font-weight: bold;    
+}
+
+.menu-footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-logo-menu-footer{
+    width: 60px;
+    height: 60px;
+}
+
+.menu-footer{
+    display: flex;
+}
+
+.menu-footer a:hover{
+    color: darkred;
+}
+
+.icon-redes-footer{    
+    display: flex;
+}
+
+.img-logo-redes{
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+}
