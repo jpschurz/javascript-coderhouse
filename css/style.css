@@ -12,8 +12,8 @@ body{
 }
 
 a{
-    text-decoration: none;
-    color: rebeccapurple;
+    text-decoration: none !important;
+    color: rebeccapurple !important ;
 }
 
 p{
@@ -23,25 +23,25 @@ p{
 }
 
 hr{
-    border-color: darkred;
+    border-color: darkred !important;
 }
 
 h1{
-    color: rebeccapurple;
-    font-size: 45px;
-    font-family: 'New Rocker';
+    color: rebeccapurple !important;
+    font-size: 45px !important;
+    font-family: 'New Rocker' !important;
 }
 
 h2{
-    color: rebeccapurple;
-    font-size: 25px;
-    font-family: 'Oxygen';
+    color: rebeccapurple !important;
+    font-size: 25px !important;
+    font-family: 'Oxygen' !important;
 }
 
 h3{
-    color: white;
-    font-size: 18px;
-    font-family: 'Oxygen';
+    color: white !important;
+    font-size: 18px !important;
+    font-family: 'Oxygen' !important;
 }
 
 nav ul li{
@@ -67,9 +67,13 @@ nav ul li{
     width: 100%;
 }
 
-.menu-header{
+/*.menu-header{
     display: flex;
     justify-content: space-around;
+}*/
+
+.menu-header{
+    background-color:#3837346b;
 }
 
 .menu-header a{
@@ -78,8 +82,8 @@ nav ul li{
 }
 
 .menu-header a:hover{
-    color: darkred;
-    text-decoration: overline;
+    color: darkred !important;
+    text-decoration: overline !important;
 }
 
 
@@ -89,7 +93,7 @@ nav ul li{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .section-conciertos h1{
@@ -248,7 +252,7 @@ nav ul li{
 .form-contacto{
     background-color: #7f7f7f57;
     padding: 3rem;
-    width: 300px;
+    width: 350px;
     height: 450px;
     box-shadow: 6px 11px 13px -2px rgb(0 0 0 / 30%);
     margin-bottom: 1.5rem;

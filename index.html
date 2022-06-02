@@ -7,6 +7,8 @@
         <title>Home - La Cueva del Metal</title>
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
+        <!-- CSS Bootsrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <!-- Favicon -->
         <link rel="shortcut icon" href="images/favicon.png">
         <!-- Fuentes de Google -->
@@ -21,39 +23,34 @@
 
     <!-- Inicio Menu Principal -->
     <header>
-        <div class="menu-header-container">
-            <div class="logo-header">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Logo - La cueva del Metal" class="img-logo-header">
-                </a>
+        <div class="menu-header-container logo-header">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo - La cueva del Metal" class="img-logo-header">
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark menu-header" aria-label="Tenth navbar example">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+                <ul class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="pages/noticias.html">Noticias</a>
+                    <a class="nav-link" href="pages/agenda.html">Agenda</a>
+                    <a class="nav-link" href="pages/lanzamientos.html">Lanzamientos</a>
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                </ul>
+              </div>
             </div>
-            <div class="menu-header">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="pages/noticias.html">Noticias</a>
-                        </li>
-                        <li>
-                            <a href="pages/agenda.html">Agenda</a>
-                        </li>
-                        <li>
-                            <a href="pages/lanzamientos.html">Lanzamientos</a>
-                        </li>
-                        <li>
-                            <a href="pages/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>    
-        </div>    
+          </nav>
     </header>
     <!-- Fin Menu Principal -->
     
     <!-- Inicio Secciones -->
     <main>
-        <!-- Inicio Seccio Conciertos -->
+        <!-- Inicio Seccion Conciertos -->
         <section>
-            <hr>
             <div class="section-conciertos">                
                 <h1>
                     Proximos Conciertos
@@ -104,6 +101,7 @@
                             <h2>
                                 Noticia 1
                             </h2>
+                            
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero itaque minus odit quis sed voluptatum earum voluptatibus iusto corrupti! Possimus id ducimus magnam, laborum corporis cupiditate a quibusdam inventore laudantium!
                             </p>
@@ -173,5 +171,8 @@
         </div>    
     </footer>
     <!-- Fin Footer -->
+
+    <!-- Bootstrap - JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
