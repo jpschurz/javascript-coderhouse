@@ -317,6 +317,7 @@ footer p{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .img-logo-menu-footer{
@@ -340,4 +341,55 @@ footer p{
     width: 32px;
     height: 32px;
     border-radius: 10px;
+}
+
+/* Medias queries */
+
+/* Mobile */
+@media screen and (max-width: 576px){
+    .menu-footer-container{
+        margin: 6px 6px 6px 6px;
+    }
+    .column-noticias{
+        margin: 30px 10px 0px 10px
+    }
+
+    .grid-noticias{
+        flex-wrap: wrap; 
+    }
+    
+    .section-lanzamientos h2 {
+        margin: 10px 10px 10px 10px;
+    }
+
+    .section-conciertos {
+
+    }
+
+    .grid-img-conciertos{
+        margin: 10px 10px 20px 10px;
+    }
+
+    .section-lanzamientos{
+        display: none;
+    }
+
+    .section-conciertos h1 {
+        
+    }
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px){
+    .form-contacto{
+        
+    }    
+}
+
+/* Desktop */
+@media screen and (min-width: 992px){
+    .form-contacto{
+        
+    }
 }
