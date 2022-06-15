@@ -1,0 +1,354 @@
+body {
+  font-family: "Oxygen"; }
+
+p {
+  font-family: "Oxygen";
+  font-size: 16px; }
+
+h1 {
+  font-family: "New Rocker";
+  font-size: 45px !important; }
+
+h2 {
+  font-family: "Oxygen";
+  font-size: 25px !important; }
+
+h3 {
+  font-family: "Oxygen";
+  font-size: 18px !important; }
+
+a {
+  color: rebeccapurple !important; }
+
+p {
+  color: white; }
+
+hr {
+  border-color: darkred !important; }
+
+h1 {
+  color: rebeccapurple !important; }
+
+h2 {
+  color: rebeccapurple !important; }
+
+h3 {
+  color: white !important; }
+
+body {
+  background-color: black; }
+
+.menu-header {
+  background-color: #3837346b; }
+
+.menu-header a:hover {
+  color: darkred !important; }
+
+.menu-header a:active {
+  background-color: #3837346b;
+  border: #3837346b solid 2px;
+  color: white; }
+
+.menu-footer a:hover {
+  color: darkred !important; }
+
+.menu-footer a:active {
+  background-color: #3837346b;
+  border: #3837346b solid 2px;
+  color: white; }
+
+.grid-conciertos {
+  background-color: #3837346b; }
+
+.column-noticias {
+  background-color: #7f7f7f57; }
+
+.form-contacto {
+  background-color: #7f7f7f57; }
+
+.fas {
+  color: rebeccapurple; }
+
+.group-form-contacto {
+  background-color: white; }
+
+.input-group-form-contacto {
+  border-color: #ffffff00; }
+
+.submit-form-contacto {
+  background-color: darkred;
+  color: white;
+  border-color: #00000028; }
+
+.terminos-form-contacto {
+  color: firebrick; }
+
+/*Footer*/
+footer {
+  background-color: black; }
+  footer p {
+    color: darkred;
+    font-weight: bold; }
+
+.menu-footer a:hover {
+  text-decoration: underline !important; }
+
+.menu-footer a:active {
+  border-radius: 3px; }
+
+.menu-footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  .menu-footer-container .img-logo-menu-footer {
+    width: 60px;
+    height: 60px; }
+  .menu-footer-container .menu-footer {
+    display: flex; }
+  .menu-footer-container .img-logo-redes {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px; }
+  .menu-footer-container .icon-redes-footer {
+    display: flex; }
+
+.menu-header-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px; }
+
+.logo-header {
+  display: flex; }
+
+.img-logo-header {
+  width: 100%; }
+
+nav ul li {
+  list-style: none;
+  display: inline-block; }
+
+.menu-header a {
+  font-weight: bold;
+  padding: 10px; }
+
+a:hover {
+  text-decoration: overline !important; }
+  a:hover:active {
+    border-radius: 3px; }
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+  .menu-footer-container {
+    margin: 6px 6px 6px 6px; }
+  .column-noticias {
+    margin: 30px 10px 0px 10px; }
+  .grid-noticias {
+    flex-wrap: wrap; }
+  .section-lanzamientos h2 {
+    margin: 10px 10px 10px 10px; }
+  /*.section-conciertos {
+
+    }*/
+  .grid-img-conciertos {
+    margin: 10px 10px 20px 10px; }
+  .section-lanzamientos {
+    display: none; }
+  /*.section-conciertos h1 {
+        
+    }*/
+  iframe {
+    height: auto; } }
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  /*.form-contacto{
+        
+    }*/ }
+
+/*Seccion Conciertos*/
+.section-conciertos {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 40px; }
+
+.section-conciertos h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.grid-conciertos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px; }
+
+.img-conciertos {
+  width: 300px;
+  height: 380px; }
+
+/*Seccion Noticias*/
+.section-noticias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.section-noticias h1 {
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.grid-noticias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px; }
+
+.column-noticias {
+  margin: 0px 10px 0px 10px;
+  padding: 10px; }
+
+/*Seccion Agenda*/
+.section-agenda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.grid-agenda {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; }
+
+/*Seccion Lanzamiento*/
+.section-lanzamientos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.section-lanzamientos h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.section-lanzamientos h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px; }
+
+.grid-lanzamientos {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px 10px 0px 10px;
+  height: 100%; }
+
+.grid-video-lanzamiento {
+  display: grid;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; }
+
+iframe {
+  max-width: 100%; }
+
+.img-lanzamientos {
+  width: 100%; }
+
+.box-img-lanzamientos {
+  margin: 0px 10px 0px 10px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2; }
+
+.box-p-lanzamientos {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 2;
+  grid-column-end: 3; }
+
+.box-playlist-lanzamientos {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3; }
+
+/*Seccion Contacto*/
+.section-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%; }
+
+.form-contacto {
+  padding: 3rem;
+  width: 350px;
+  height: 450px;
+  /*  box-shadow: 6px 11px 13px -2px rgb(0 0 0 / 30%); */
+  margin-bottom: 1.5rem;
+  margin-top: 20px; }
+
+.fas {
+  margin: 5px 10px 5px 10px; }
+
+.group-form-contacto {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px; }
+
+.input-group-form-contacto {
+  width: 18rem;
+  height: 1.8rem;
+  border-block: none; }
+
+.submit-form-contacto {
+  width: 100px;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  width: 100%;
+  margin-top: 1.5rem;
+  transition: background-color .5s ease-in; }
+
+.terminos-form-contacto {
+  display: block;
+  text-align: center;
+  font-size: 12px; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  background-image: url("../images/bg-cave.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: bottom; }
+
+a {
+  text-decoration: none !important; }

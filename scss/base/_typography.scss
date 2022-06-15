@@ -1,0 +1,35 @@
+$typography-p: 'Oxygen';
+$typography-h: 'New Rocker';
+
+$headers:
+45px,
+25px,
+18px,
+16px;
+
+
+body{
+    font-family: $typography-p;
+}
+
+p{
+    font-family: $typography-p;
+    font-size: nth($headers, 4);
+}
+
+h1{
+    font-family: $typography-h;
+    font-size: nth($headers, 1) !important;
+}
+
+h2{
+    font-family: $typography-p;
+    font-size: nth($headers, 2) !important;
+}
+
+h3{
+    font-family: $typography-p;
+    font-size: nth($headers, 3) !important;
+}
+
+

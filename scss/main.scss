@@ -1,0 +1,25 @@
+@import 'base/typography';
+@import 'base/colors';
+
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/media-queries';
+@import 'layout/section';
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../images/bg-cave.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: bottom;
+}
+
+a{
+    text-decoration: none !important;
+}

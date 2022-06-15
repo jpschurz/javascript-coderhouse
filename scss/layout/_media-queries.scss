@@ -1,0 +1,46 @@
+/* Mobile */
+@media screen and (max-width: 576px){
+    .menu-footer-container{
+        margin: 6px 6px 6px 6px;
+    }
+    .column-noticias{
+        margin: 30px 10px 0px 10px
+    }
+
+    .grid-noticias{
+        flex-wrap: wrap; 
+    }
+    
+    .section-lanzamientos h2 {
+        margin: 10px 10px 10px 10px;
+    }
+
+    /*.section-conciertos {
+
+    }*/
+
+    .grid-img-conciertos{
+        margin: 10px 10px 20px 10px;
+    }
+
+    .section-lanzamientos{
+        display: none;
+    }
+
+    /*.section-conciertos h1 {
+        
+    }*/
+
+    iframe {
+        height: auto;
+    }
+    
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px){
+    /*.form-contacto{
+        
+    }*/
+}

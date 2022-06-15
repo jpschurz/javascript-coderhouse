@@ -1,0 +1,30 @@
+.menu-header-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+    margin-bottom: 20px;
+}
+.logo-header{
+    display: flex;   
+}
+.img-logo-header{
+    width: 100%;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.menu-header a{
+    font-weight: bold;
+    padding: 10px;
+}
+
+    a:hover{        
+        text-decoration: overline !important;
+    
+        &:active {
+        border-radius: 3px;
+    }
+}    
+    
