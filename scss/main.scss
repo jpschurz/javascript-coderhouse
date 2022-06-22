@@ -16,25 +16,9 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-y: bottom;
+    
+    a{
+        text-decoration: none !important;
+    }
 }
 
-a{
-    text-decoration: none !important;
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-body{
-    background-image: url('../images/bg-cave.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-y: bottom;
-}
-
-a{
-    text-decoration: none !important;
-}

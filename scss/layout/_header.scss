@@ -4,21 +4,27 @@
     flex-direction: column;   
     margin-bottom: 20px;
 }
+
 .logo-header{
     display: flex;   
 }
+
 .img-logo-header{
     width: 100%;
 }
-nav ul li{
-    list-style: none;
-    display: inline-block;
+
+nav{
+    li{
+        list-style: none;
+        display: inline-block;
+    }
 }
 
-.menu-header a{
-    font-weight: bold;
-    padding: 10px;
-}
+.menu-header 
+    a{
+        font-weight: bold;
+        padding: 10px;
+    }
 
     a:hover{        
         text-decoration: overline !important;
