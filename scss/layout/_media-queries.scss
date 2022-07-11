@@ -1,46 +1,117 @@
 /* Mobile */
 @media screen and (max-width: 576px){
+    /*Footer*/
     .menu-footer-container{
         margin: 6px 6px 6px 6px;
     }
-    .column-noticias{
-        margin: 30px 10px 0px 10px
-    }
 
-    .grid-noticias{
-        flex-wrap: wrap; 
-    }
+    /*Seccion Noticias*/
+
+    .section-noticias{
+
+        h1{
+            margin: 20px 100px 20px 100px !important;
+        }
+
+        .grid-noticias{
+            flex-wrap: wrap; 
     
-    .section-lanzamientos h2 {
-        margin: 10px 10px 10px 10px;
-    }
+            .column-noticias{
+                margin: 30px 10px 0px 10px !important;
+            }
+            
+        }
+    } 
 
-    /*.section-conciertos {
-
-    }*/
-
-    .grid-img-conciertos{
-        margin: 10px 10px 20px 10px;
-    }
+    /*Seccion Lanzamientos*/
 
     .section-lanzamientos{
         display: none;
+
+        h1{
+            margin: 20px 100px 20px 100px !important;
+        }
+
+        h2{
+            margin: 0px 20px 0px 20px;
+        }
+
+        .grid-lanzamientos{
+            grid-template-rows: 0fr 0fr 0fr 0fr !important;
+
+            .box-img-lanzamientos{
+                margin: 0px 10px 0px 10px !important;
+                grid-column: 5 !important;
+                grid-row: 1 !important;
+            }
+            
+            .box-p-lanzamientos {
+                margin: 20px 10px 0px 10px !important;
+                grid-column: 5 !important;
+                grid-row: 2 !important;
+            }
+        }        
     }
 
-    /*.section-conciertos h1 {
+    /*Pŕoximos Conciertos*/
+
+    .section-conciertos{
         
-    }*/
+        h1{
+            margin: 20px 100px 20px 100px !important;
+        }
 
-    iframe {
-        height: auto;
+        .grid-conciertos{
+        
+            .img-conciertos{
+                margin: 20px 0px 20px 0px;
+            }
+        }
     }
-    
 
 }
 
 /* Tablet */
-@media screen and (min-width: 768px){
-    /*.form-contacto{
+@media screen and (max-width: 768px){
+    /*Footer*/
+    .menu-footer-container{
+        margin: 6px 6px 6px 6px !important;
+    }
+
+    /*Seccion Noticias*/
+
+    .grid-noticias{
+        flex-wrap: wrap; 
+
+        .column-noticias{
+            margin: 30px 10px 0px 10px !important;
+        }
         
-    }*/
+    }
+
+    /*Seccion Lanzamientos*/
+
+    .section-lanzamientos{
+        display: none;
+
+        h2{
+            margin: 0px 20px 0px 20px;
+        }
+
+        .grid-lanzamientos{
+            grid-template-rows: 0fr 0fr 0fr 0fr !important;
+
+            .box-img-lanzamientos{
+                margin: 0px 10px 0px 10px !important;
+                grid-column: 5 !important;
+                grid-row: 1 !important;
+            }
+            
+            .box-p-lanzamientos {
+                margin: 20px 10px 0px 10px !important;
+                grid-column: 5 !important;
+                grid-row: 2 !important;
+            }
+        }        
+    }
 }

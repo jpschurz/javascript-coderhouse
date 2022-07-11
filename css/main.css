@@ -1,53 +1,42 @@
+@charset "UTF-8";
 body {
   font-family: "Oxygen"; }
-
-p {
-  font-family: "Oxygen";
-  font-size: 16px; }
-
-h1 {
-  font-family: "New Rocker";
-  font-size: 45px !important; }
-
-h2 {
-  font-family: "Oxygen";
-  font-size: 25px !important; }
-
-h3 {
-  font-family: "Oxygen";
-  font-size: 18px !important; }
-
-a {
-  color: rebeccapurple !important; }
-
-p {
-  color: white; }
-
-hr {
-  border-color: darkred !important; }
-
-h1 {
-  color: rebeccapurple !important; }
-
-h2 {
-  color: rebeccapurple !important; }
-
-h3 {
-  color: white !important; }
+  body p {
+    font-family: "Oxygen";
+    font-size: 16px; }
+  body h1 {
+    font-family: "New Rocker";
+    font-size: 45px !important; }
+  body h2 {
+    font-family: "Oxygen";
+    font-size: 25px !important; }
+  body h3 {
+    font-family: "Oxygen";
+    font-size: 18px !important; }
 
 body {
   background-color: black; }
+  body a {
+    color: rebeccapurple !important; }
+  body p {
+    color: white; }
+  body hr {
+    border-color: darkred !important; }
+  body h1 {
+    color: rebeccapurple !important; }
+  body h2 {
+    color: rebeccapurple !important; }
+  body h3 {
+    color: white !important; }
 
 .menu-header {
   background-color: #3837346b; }
-
-.menu-header a:hover {
-  color: darkred !important; }
-
-.menu-header a:active {
-  background-color: #3837346b;
-  border: #3837346b solid 2px;
-  color: white; }
+  .menu-header a:hover {
+    color: darkred !important; }
+  .menu-header a:active {
+    background-color: #3837346b;
+    border: #3837346b solid 2px;
+    color: white; }
 
 .menu-footer a:hover {
   color: darkred !important; }
@@ -65,108 +54,150 @@ body {
 
 .form-contacto {
   background-color: #7f7f7f57; }
+  .form-contacto .group-form-contacto {
+    background-color: white; }
+    .form-contacto .group-form-contacto .fas {
+      color: rebeccapurple; }
+    .form-contacto .group-form-contacto .input-group-form-contacto {
+      border-color: #ffffff00; }
+  .form-contacto .terminos-form-contacto {
+    color: firebrick; }
+    .form-contacto .terminos-form-contacto .submit-form-contacto {
+      background-color: darkred;
+      color: white;
+      border-color: #00000028; }
 
-.fas {
-  color: rebeccapurple; }
-
-.group-form-contacto {
-  background-color: white; }
-
-.input-group-form-contacto {
-  border-color: #ffffff00; }
-
-.submit-form-contacto {
-  background-color: darkred;
-  color: white;
-  border-color: #00000028; }
-
-.terminos-form-contacto {
-  color: firebrick; }
-
-/*Footer*/
 footer {
   background-color: black; }
   footer p {
     color: darkred;
     font-weight: bold; }
+  footer .menu-footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    footer .menu-footer-container .logo-footer .img-logo-menu-footer {
+      width: 60px;
+      height: 60px; }
+    footer .menu-footer-container .menu-footer {
+      display: flex; }
+      footer .menu-footer-container .menu-footer a:hover {
+        text-decoration: underline !important; }
+      footer .menu-footer-container .menu-footer a:active {
+        border-radius: 3px; }
+    footer .menu-footer-container .img-logo-redes {
+      width: 32px;
+      height: 32px;
+      border-radius: 10px; }
+    footer .menu-footer-container .icon-redes-footer {
+      display: flex; }
 
-.menu-footer a:hover {
-  text-decoration: underline !important; }
-
-.menu-footer a:active {
-  border-radius: 3px; }
-
-.menu-footer-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
-  .menu-footer-container .img-logo-menu-footer {
-    width: 60px;
-    height: 60px; }
-  .menu-footer-container .menu-footer {
-    display: flex; }
-  .menu-footer-container .img-logo-redes {
-    width: 32px;
-    height: 32px;
-    border-radius: 10px; }
-  .menu-footer-container .icon-redes-footer {
-    display: flex; }
-
-.menu-header-container {
+header .menu-header-container {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-bottom: 20px; }
+  header .menu-header-container .img-logo-header {
+    width: 100%; }
 
-.logo-header {
-  display: flex; }
-
-.img-logo-header {
-  width: 100%; }
-
-nav li {
+header nav li {
   list-style: none;
   display: inline-block; }
 
-.menu-header
-a {
+header .menu-header a {
   font-weight: bold;
   padding: 10px; }
 
-a:hover {
+header .menu-header a:hover {
   text-decoration: overline !important; }
-  a:hover:active {
+  header .menu-header a:hover:active {
     border-radius: 3px; }
 
 /* Mobile */
 @media screen and (max-width: 576px) {
+  /*Footer*/
   .menu-footer-container {
     margin: 6px 6px 6px 6px; }
-  .column-noticias {
-    margin: 30px 10px 0px 10px; }
-  .grid-noticias {
+  /*Seccion Noticias*/
+  .section-noticias h1 {
+    margin: 20px 100px 20px 100px !important; }
+  .section-noticias .grid-noticias {
     flex-wrap: wrap; }
-  .section-lanzamientos h2 {
-    margin: 10px 10px 10px 10px; }
-  /*.section-conciertos {
-
-    }*/
-  .grid-img-conciertos {
-    margin: 10px 10px 20px 10px; }
+    .section-noticias .grid-noticias .column-noticias {
+      margin: 30px 10px 0px 10px !important; }
+  /*Seccion Lanzamientos*/
   .section-lanzamientos {
     display: none; }
-  /*.section-conciertos h1 {
-        
-    }*/
-  iframe {
-    height: auto; } }
+    .section-lanzamientos h1 {
+      margin: 20px 100px 20px 100px !important; }
+    .section-lanzamientos h2 {
+      margin: 0px 20px 0px 20px; }
+    .section-lanzamientos .grid-lanzamientos {
+      grid-template-rows: 0fr 0fr 0fr 0fr !important; }
+      .section-lanzamientos .grid-lanzamientos .box-img-lanzamientos {
+        margin: 0px 10px 0px 10px !important;
+        grid-column: 5 !important;
+        grid-row: 1 !important; }
+      .section-lanzamientos .grid-lanzamientos .box-p-lanzamientos {
+        margin: 20px 10px 0px 10px !important;
+        grid-column: 5 !important;
+        grid-row: 2 !important; }
+  /*Pŕoximos Conciertos*/
+  .section-conciertos h1 {
+    margin: 20px 100px 20px 100px !important; }
+  .section-conciertos .grid-conciertos .img-conciertos {
+    margin: 20px 0px 20px 0px; } }
 
 /* Tablet */
-@media screen and (min-width: 768px) {
-  /*.form-contacto{
-        
-    }*/ }
+@media screen and (max-width: 768px) {
+  /*Footer*/
+  .menu-footer-container {
+    margin: 6px 6px 6px 6px !important; }
+  /*Seccion Noticias*/
+  .grid-noticias {
+    flex-wrap: wrap; }
+    .grid-noticias .column-noticias {
+      margin: 30px 10px 0px 10px !important; }
+  /*Seccion Lanzamientos*/
+  .section-lanzamientos {
+    display: none; }
+    .section-lanzamientos h2 {
+      margin: 0px 20px 0px 20px; }
+    .section-lanzamientos .grid-lanzamientos {
+      grid-template-rows: 0fr 0fr 0fr 0fr !important; }
+      .section-lanzamientos .grid-lanzamientos .box-img-lanzamientos {
+        margin: 0px 10px 0px 10px !important;
+        grid-column: 5 !important;
+        grid-row: 1 !important; }
+      .section-lanzamientos .grid-lanzamientos .box-p-lanzamientos {
+        margin: 20px 10px 0px 10px !important;
+        grid-column: 5 !important;
+        grid-row: 2 !important; } }
+
+/*Body*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+  * body {
+    background-image: url("../images/bg-cave.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: bottom; }
+    * body a {
+      text-decoration: none !important; }
+
+/*Home*/
+.grid-video-lanzamientos {
+  display: grid;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; }
+  .grid-video-lanzamientos iframe {
+    max-width: 100%; }
 
 /*Seccion Conciertos*/
 .section-conciertos {
@@ -179,16 +210,16 @@ a:hover {
     justify-content: center;
     margin-bottom: 20px;
     margin-top: 20px; }
-
-.grid-conciertos {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 10px; }
-
-.img-conciertos {
-  width: 300px;
-  height: 380px; }
+  .section-conciertos .grid-conciertos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px; }
+    .section-conciertos .grid-conciertos .img-conciertos {
+      width: 300px;
+      height: 380px; }
+    .section-conciertos .grid-conciertos img:hover {
+      transform: scale(1.1); }
 
 /*Seccion Noticias*/
 .section-noticias {
@@ -198,18 +229,18 @@ a:hover {
   margin-bottom: 20px;
   margin-top: 20px; }
   .section-noticias h1 {
+    display: flex;
     margin-bottom: 20px;
     margin-top: 20px; }
-
-.grid-noticias {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 20px; }
-
-.column-noticias {
-  margin: 0px 10px 0px 10px;
-  padding: 10px; }
+  .section-noticias .grid-noticias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+    .section-noticias .grid-noticias .column-noticias {
+      margin: 0px 10px 0px 10px;
+      padding: 10px;
+      width: 100%; }
 
 /*Seccion Agenda*/
 .section-agenda {
@@ -248,45 +279,20 @@ a:hover {
     align-items: center;
     margin-bottom: 50px;
     margin-top: 50px; }
-
-.grid-lanzamientos {
-  display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  margin: 0px 10px 0px 10px;
-  height: 100%; }
-
-.grid-video-lanzamiento {
-  display: grid;
-  margin-top: 25px;
-  margin-bottom: 50px;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px; }
-  .grid-video-lanzamiento iframe {
-    max-width: 100%; }
-
-.img-lanzamientos {
-  width: 100%; }
-
-.box-img-lanzamientos {
-  margin: 0px 10px 0px 10px;
-  grid-row-start: 1;
-  grid-column-start: 1;
-  grid-row-end: 3;
-  grid-column-end: 2; }
-
-.box-p-lanzamientos {
-  grid-row-start: 1;
-  grid-column-start: 2;
-  grid-row-end: 2;
-  grid-column-end: 3; }
-
-.box-playlist-lanzamientos {
-  grid-row-start: 2;
-  grid-column-start: 2;
-  grid-row-end: 3;
-  grid-column-end: 3; }
+  .section-lanzamientos .grid-lanzamientos {
+    display: grid;
+    grid-template-rows: 1fr 0fr 0fr 0fr;
+    grid-template-columns: 0.25fr 1fr 1fr 0.25fr;
+    margin: 0px 10px 50px 10px; }
+    .section-lanzamientos .grid-lanzamientos .box-img-lanzamientos {
+      margin: 0px 10px 0px 10px;
+      grid-column: 2;
+      grid-row: 1; }
+      .section-lanzamientos .grid-lanzamientos .box-img-lanzamientos .img-lanzamientos {
+        width: 100%; }
+    .section-lanzamientos .grid-lanzamientos .box-p-lanzamientos {
+      grid-column: 3;
+      grid-row: 1; }
 
 /*Seccion Contacto*/
 .section-contacto {
@@ -296,55 +302,36 @@ a:hover {
   margin-bottom: 20px;
   margin-top: 20px;
   width: 100%; }
-
-.form-contacto {
-  padding: 3rem;
-  width: 350px;
-  height: 450px;
-  /*  box-shadow: 6px 11px 13px -2px rgb(0 0 0 / 30%); */
-  margin-bottom: 1.5rem;
-  margin-top: 20px; }
-
-.fas {
-  margin: 5px 10px 5px 10px; }
-
-.group-form-contacto {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 15px; }
-
-.input-group-form-contacto {
-  width: 18rem;
-  height: 1.8rem;
-  border-block: none;
-  margin: 0px 0px 0px 5px; }
-
-.submit-form-contacto {
-  width: 100px;
-  height: 30px;
-  text-transform: uppercase;
-  font-weight: 600;
-  display: block;
-  width: 100%;
-  margin-top: 1.5rem;
-  transition: background-color .5s ease-in; }
-
-.terminos-form-contacto {
-  display: block;
-  text-align: center;
-  font-size: 12px; }
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box; }
-
-body {
-  background-image: url("../images/bg-cave.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-y: bottom; }
-  body a {
-    text-decoration: none !important; }
+  .section-contacto .form-contacto {
+    padding: 3rem;
+    width: 350px;
+    height: 450px;
+    /*  box-shadow: 6px 11px 13px -2px rgb(0 0 0 / 30%); */
+    margin-bottom: 1.5rem;
+    margin-top: 20px; }
+    .section-contacto .form-contacto .group-form-contacto {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 15px; }
+      .section-contacto .form-contacto .group-form-contacto .fas {
+        margin: 5px 10px 5px 10px; }
+      .section-contacto .form-contacto .group-form-contacto .input-group-form-contacto {
+        width: 18rem;
+        height: 1.8rem;
+        border-block: none;
+        margin: 0px 0px 0px 5px; }
+  .section-contacto .terminos-form-contacto {
+    display: block;
+    text-align: center;
+    font-size: 12px; }
+    .section-contacto .terminos-form-contacto .submit-form-contacto {
+      width: 100px;
+      height: 30px;
+      text-transform: uppercase;
+      font-weight: 600;
+      display: block;
+      width: 100%;
+      margin-top: 1.5rem;
+      transition: background-color .5s ease-in; }

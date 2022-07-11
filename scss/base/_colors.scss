@@ -10,66 +10,71 @@ white,
 firebrick;
 
 
-a{
-    color: nth($colors, 2) !important;
-}
-
-p{
-    color: nth($colors, 4);
-}
-
-hr{
-    border-color: nth($colors, 3) !important;
-}
-
-h1{
-    color: nth($colors, 2) !important;
-}
-
-h2{
-    color: nth($colors, 2) !important;
-}
-
-h3{
-    color: nth($colors, 4) !important;
-}
-
 body{
     background-color: nth($colors, 1);
+
+    a{
+        color: nth($colors, 2) !important;
+    }
+
+    p{
+        color: nth($colors, 4);
+    }
+
+    hr{
+        border-color: nth($colors, 3) !important;
+    }
+    
+    h1{
+        color: nth($colors, 2) !important;
+    }
+    
+    h2{
+        color: nth($colors, 2) !important;
+    }
+    
+    h3{
+        color: nth($colors, 4) !important;
+    }
+
 }
+
 
 //Colores Header
 
 .menu-header{
     background-color: nth($colors, 5);
-}
 
-.menu-header a{
+    a{
     
-    &:hover{
-        color:nth($colors, 3) !important;
-    }
-
-    &:active {
-        background-color: nth($colors, 5);
-        border: nth($colors, 5) solid 2px;
-        color: nth($colors, 4);
+        &:hover{
+            color:nth($colors, 3) !important;
+        }
+    
+        &:active {
+            background-color: nth($colors, 5);
+            border: nth($colors, 5) solid 2px;
+            color: nth($colors, 4);
+        }
     }
 }
 
 
 //Colores Footer
 
-.menu-footer a{
-    
-    &:hover{
-        color:nth($colors, 3) !important;
-    }
+.menu-footer{
 
-    &:active {
-        background-color: nth($colors, 5);
-        border: nth($colors, 5) solid 2px;
-        color: nth($colors, 4);
+    a{
+    
+        &:hover{
+            color:nth($colors, 3) !important;
+        }
+
+        &:active {
+            background-color: nth($colors, 5);
+            border: nth($colors, 5) solid 2px;
+            color: nth($colors, 4);
+        }
     }
 }
 
@@ -80,37 +85,39 @@ body{
     background-color: nth($colors, 5);
 }
 
+
 //Colores Seccion Noticias
 
 .column-noticias{
     background-color: nth($colors, 6);
 }
 
+
 //Colores Seccion Contactos
 
 
 .form-contacto{
     background-color: nth($colors, 6);
-}
+    
+    .group-form-contacto{
+        background-color: nth($colors, 4);
 
-.fas{
-    color: nth($colors, 2);
-}
+        .fas{
+            color: nth($colors, 2);
+        }
 
-.group-form-contacto{
-    background-color: nth($colors, 4);
-}
+        .input-group-form-contacto{
+            border-color: nth($colors, 7);
+        }
+    }
 
-.input-group-form-contacto{
-    border-color: nth($colors, 7);
-}
+    .terminos-form-contacto{
+        color: nth($colors, 9);
 
-.submit-form-contacto{    
-    background-color: nth($colors, 3);
-    color: nth($colors, 4);
-    border-color: nth($colors, 8);  
-}
-
-.terminos-form-contacto{
-    color: nth($colors, 9); 
+        .submit-form-contacto{    
+            background-color: nth($colors, 3);
+            color: nth($colors, 4);
+            border-color: nth($colors, 8);  
+        }
+    }
 }

@@ -1,3 +1,37 @@
+/*Body*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    body{
+        background-image: url('../images/bg-cave.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position-y: bottom;
+        
+        a{
+            text-decoration: none !important;
+        }
+    }
+}
+
+/*Home*/
+
+.grid-video-lanzamientos{
+    display: grid;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+    iframe {
+    max-width: 100%;
+    }
+}
+
 /*Seccion Conciertos*/
 
 .section-conciertos{
@@ -12,20 +46,24 @@
         margin-bottom: 20px;
         margin-top: 20px;
     }
-}
 
-.grid-conciertos{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 10px;
-}
+    .grid-conciertos{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px;
+    
+        .img-conciertos{
+            width: 300px;
+            height: 380px;
+        }
 
-.img-conciertos{
-    width: 300px;
-    height: 380px;
-}
+        img:hover{
+            transform: scale(1.10);
+        }
 
+    }
+}
 
 /*Seccion Noticias*/
 
@@ -37,23 +75,24 @@
     margin-top: 20px;
 
     h1{
+        display: flex;
         margin-bottom: 20px;
         margin-top: 20px;
     }
-}
 
-.grid-noticias{    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    .grid-noticias{    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    
+        .column-noticias{
+            margin: 0px 10px 0px 10px;
+            padding: 10px;
+            width: 100%;
+        }
+    }
 }
-
-.column-noticias{
-    margin: 0px 10px 0px 10px;
-    padding: 10px;
-}
-
 
 /*Seccion Agenda*/
 
@@ -100,56 +139,30 @@
         align-items: center;
         margin-bottom: 50px;
         margin-top: 50px; 
-    }   
-}
-
-.grid-lanzamientos{
-    display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    margin: 0px 10px 0px 10px;
-    height: 100%;
-}
-
-.grid-video-lanzamiento{
-    display: grid;
-    margin-top: 25px;
-    margin-bottom: 50px;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    
-    iframe {
-    max-width: 100%;
     }
-}    
-
-.img-lanzamientos{
-    width: 100%;
+    
+    .grid-lanzamientos{
+        display: grid;
+        grid-template-rows: 1fr 0fr 0fr 0fr;
+        grid-template-columns: 0.25fr 1fr 1fr 0.25fr;
+        margin: 0px 10px 50px 10px;
+    
+        .box-img-lanzamientos{
+            margin: 0px 10px 0px 10px;
+            grid-column: 2;
+            grid-row: 1;
+    
+            .img-lanzamientos{
+                width: 100%;
+            }        
+        }
+    
+        .box-p-lanzamientos{
+        grid-column: 3;
+        grid-row: 1;
+        }  
+    }
 }
-
-.box-img-lanzamientos{
-    margin: 0px 10px 0px 10px;
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-row-end: 3;
-    grid-column-end: 2;
-}
-
-.box-p-lanzamientos{
-    grid-row-start: 1;
-    grid-column-start: 2;
-    grid-row-end: 2;
-    grid-column-end: 3;
-}
-
-.box-playlist-lanzamientos{    
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-row-end: 3;
-    grid-column-end: 3;
-}
-
 
 /*Seccion Contacto*/
 
@@ -160,49 +173,50 @@
     margin-bottom: 20px;
     margin-top: 20px;
     width: 100%;
-}
+    
+    .form-contacto{
+        padding: 3rem;
+        width: 350px;
+        height: 450px;
+        /*  box-shadow: 6px 11px 13px -2px rgb(0 0 0 / 30%); */
+        margin-bottom: 1.5rem;
+        margin-top: 20px;
 
-.form-contacto{
-    padding: 3rem;
-    width: 350px;
-    height: 450px;
-    /*  box-shadow: 6px 11px 13px -2px rgb(0 0 0 / 30%); */
-    margin-bottom: 1.5rem;
-    margin-top: 20px;
-}
+        .group-form-contacto{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 15px;
 
-.fas{
-    margin: 5px 10px 5px 10px;
-}
+            .fas{
+                margin: 5px 10px 5px 10px;
+            }
+            
+            .input-group-form-contacto{
+                width: 18rem;
+                height: 1.8rem;
+                border-block: none;
+                margin: 0px 0px 0px 5px;
+            }
+        }
+        
+    }
 
-.group-form-contacto{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 15px;
-}
+    .terminos-form-contacto{
+        display: block;
+        text-align: center;
+        font-size: 12px;
 
-.input-group-form-contacto{
-    width: 18rem;
-    height: 1.8rem;
-    border-block: none;
-    margin: 0px 0px 0px 5px;
-}
-
-.submit-form-contacto{
-    width: 100px;
-    height: 30px;
-    text-transform: uppercase;
-    font-weight: 600;
-    display: block;
-    width: 100%;
-    margin-top: 1.5rem;
-    transition: background-color .5s ease-in;    
-}
-
-.terminos-form-contacto{
-    display: block;
-    text-align: center;
-    font-size: 12px;
+        .submit-form-contacto{
+            width: 100px;
+            height: 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+            display: block;
+            width: 100%;
+            margin-top: 1.5rem;
+            transition: background-color .5s ease-in;    
+        }
+    }
 }

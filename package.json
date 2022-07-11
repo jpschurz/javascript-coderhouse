@@ -1,0 +1,25 @@
+{
+  "name": "desarrollo-web-coderhouse",
+  "version": "1.0.0",
+  "description": "Proyecto final del curso llamado \"La Cueva del Metal\" es una web informativa relacionada al mundo de la musica del Heavy Metal como novedades de bandas, nuevos discos y proximos recitales.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpschurz/La_Cueva_del_Metal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpschurz/La_Cueva_del_Metal/issues"
+  },
+  "homepage": "https://github.com/jpschurz/La_Cueva_del_Metal#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
