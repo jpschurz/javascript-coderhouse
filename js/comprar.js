@@ -78,7 +78,7 @@ function seleccionarProducto() {
     }
 }
 
-mostrarCompra()
+mostrarCompra() 
 
 function mostrarCompra() {
 
