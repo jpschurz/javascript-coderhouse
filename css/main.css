@@ -335,3 +335,38 @@ header .menu-header a:hover {
       width: 100%;
       margin-top: 1.5rem;
       transition: background-color .5s ease-in; }
+
+/*Seccion Producctos*/
+.section-productos {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 40px; }
+  .section-productos h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px; }
+  .section-productos .grid-productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px; }
+    .section-productos .grid-productos .img-productos {
+      width: 300px;
+      height: 380px; }
+    .section-productos .grid-productos img:hover {
+      transform: scale(1.1); }
+    .section-productos .grid-productos .container-productos {
+      display: flex;
+      justify-content: space-evenly; }
+      .section-productos .grid-productos .container-productos .foto {
+        display: none;
+        width: 500px;
+        height: 500px;
+        border: 25px solid white;
+        border-bottom: 70px solid white;
+        background-color: lightgoldenrodyellow;
+        background-image: url("/images/productos/cd/judas-priest-painkiller.jpg"); }
+      .section-productos .grid-productos .container-productos .visible {
+        display: block; }

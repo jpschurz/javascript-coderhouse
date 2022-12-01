@@ -28,8 +28,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Iconos de Font Awesome-->
+    <!-- Iconos de Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Librerias JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body>
@@ -52,7 +56,7 @@
                 <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
                     <ul class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#">CD</a>
-                        <a class="nav-link" href="#">DVD</a>
+                        <a class="nav-link" href="#" id="btn">DVD</a>
                         <a class="nav-link" href="#">VINILO</a>
                         <a class="nav-link" href="#">BLUERRAY</a>
                     </ul>
@@ -64,18 +68,44 @@
 
     <!-- Inicio Secciones -->
     <main>
+        <!-- Buscardor -->
+        <!--<div class="flex">
+            <img src="" alt="">
+            <input type="text" placeholder="Buscar producto" id="productoBuscado">
+            <button id="buscarProducto">Buscar</button>
+        </div>-->
+
+    
+            <div class="container">
+                <button id="btnProductos">Mostrar Productos</button>
+                <ul id="productos">
+    
+                </ul>
+    
+                <button id="btnCarrito">Mostrar carrito</button>
+                <div>
+                    <ul id="prodCarrito"></ul>
+                </div>
+            </div>
+        </div>
         <!-- Inicio Seccion CD -->
-        <section>
-            <div class="section-conciertos">
+        <!--<section>
+            <div class="section-productos">
                 <h1>
                     CD
                 </h1>
-                <div class="grid-conciertos">
-                    <div class="grid-img-conciertos">
+                <div class="grid-productos">
+                    <div class="grid-img-productos">
+                        <div class="container-productos">
+                            <div>
+                                <button id="btn">Mostrar imagen</button>
+                                <div class="foto"></div>
+                            </div>
+                        </div>
                         <img src="images/productos/cd/slayer-repentless.jpg"
                             alt="Concierto Canibal Corpse 17 de Mayo 2022" class="img-conciertos">
                         <div>
-                            <button id="comprar">Comprar</button>
+                            <button class="btn btn-secondary btn-lg" id="botonToast">Toast me</button>
                             &nbsp;
                             <button>Agregar al carrito</button>
                         </div>
@@ -109,11 +139,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- Fin Seccion CD -->
 
         <!-- Inicio Seccion DVD -->
-        <section>
+        <!--<section>
             <div class="section-conciertos">
                 <h1>
                     DVD
@@ -157,11 +187,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- Fin Seccion DVD -->
 
         <!-- Inicio Seccion VINILO -->
-        <section>
+        <!--<section>
             <div class="section-conciertos">
                 <h1>
                     VINILO
@@ -205,11 +235,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- Fin Seccion VINILO -->
 
         <!-- Inicio Seccion BLUERRAY -->
-        <section>
+        <!--<section>
             <div class="section-conciertos">
                 <h1>
                     BLUERRAY
@@ -253,7 +283,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- Fin Seccion BLUERRAY -->
     </main>
     <!-- Fin Secciones -->
@@ -301,6 +331,13 @@
     </script>
     <!-- Script Tienda -->
     <script src="js/script.js"></script>
+    <!-- Script librerias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>
 </body>
 
 </html>
