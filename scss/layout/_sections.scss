@@ -54,8 +54,8 @@
         padding: 10px;
     
         .img-conciertos{
-            width: 300px;
-            height: 380px;
+            width: 189;
+            height: 189px;
         }
 
         img:hover{
@@ -217,57 +217,6 @@
             width: 100%;
             margin-top: 1.5rem;
             transition: background-color .5s ease-in;    
-        }
-    }
-}
-
-/*Seccion Producctos*/
-
-.section-productos{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    margin-top: 40px;
-
-    h1{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-
-    .grid-productos{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        padding: 10px;
-    
-        .img-productos{
-            width: 300px;
-            height: 380px;
-        }
-
-        img:hover{
-            transform: scale(1.10);
-        }
-        
-        .container-productos{
-            display: flex;
-            justify-content: space-evenly;
-
-            .foto {
-                display: none;
-                width: 500px;
-                height: 500px;
-                border: 25px solid white;
-                border-bottom: 70px solid white;
-                background-color: lightgoldenrodyellow;
-                background-image: url('/images/productos/cd/judas-priest-painkiller.jpg');
-            }
-            
-            .visible {
-                display: block;        
-            }
         }
     }
 }

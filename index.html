@@ -55,11 +55,16 @@
 
                 <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
                     <ul class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">CD</a>
-                        <a class="nav-link" href="#" id="btn">DVD</a>
+                        <!--<a class="nav-link active" href="#">CD</a>
+                        <a class="nav-link" href="#">DVD</a>
                         <a class="nav-link" href="#">VINILO</a>
-                        <a class="nav-link" href="#">BLUERRAY</a>
+                        <a class="nav-link" href="#">BLUERRAY</a>-->
+                        <a class="nav-link" href="#" id="btnProductos">PRODUCTOS</a>                        
                     </ul>
+                    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnCarrito">
+                        <i class="fa-solid fa-basket-shopping fa-1x"></i>
+                    </button>
+                    
                 </div>
             </div>
         </nav>
@@ -68,223 +73,39 @@
 
     <!-- Inicio Secciones -->
     <main>
-        <!-- Buscardor -->
-        <!--<div class="flex">
-            <img src="" alt="">
-            <input type="text" placeholder="Buscar producto" id="productoBuscado">
-            <button id="buscarProducto">Buscar</button>
-        </div>-->
-
-    
-            <div class="container">
-                <button id="btnProductos">Mostrar Productos</button>
-                <ul id="productos">
-    
-                </ul>
-    
-                <button id="btnCarrito">Mostrar carrito</button>
-                <div>
-                    <ul id="prodCarrito"></ul>
+        <!-- Inicio Seccion Productos -->
+        <section>
+            <div class="section-conciertos">
+                <!--<h1>
+                    Productos
+                </h1>-->
+                <div class="grid-conciertos" id="productos">
                 </div>
-            </div>
-        </div>
-        <!-- Inicio Seccion CD -->
-        <!--<section>
-            <div class="section-productos">
-                <h1>
-                    CD
-                </h1>
-                <div class="grid-productos">
-                    <div class="grid-img-productos">
-                        <div class="container-productos">
-                            <div>
-                                <button id="btn">Mostrar imagen</button>
-                                <div class="foto"></div>
+                <!--<h1>Productos comprados</h1>
+                <div id="prodCarrito"></div>-->
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Productos adquiridos</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="prodCarrito">
+                            <div >                            
                             </div>
                         </div>
-                        <img src="images/productos/cd/slayer-repentless.jpg"
-                            alt="Concierto Canibal Corpse 17 de Mayo 2022" class="img-conciertos">
-                        <div>
-                            <button class="btn btn-secondary btn-lg" id="botonToast">Toast me</button>
-                            &nbsp;
-                            <button>Agregar al carrito</button>
-                        </div>
-                    </div>
-                    <div class="grid-img-conciertos">
-                        <img src="images/productos/cd/judas-priest-painkiller.jpg"
-                            alt="Concierto Horcas 06 de Agosto 2022" class="img-conciertos">
-                        <div>
-                            <button id="comprar">Comprar</button>
-                            &nbsp;
-                            <button>Agregar al carrito</button>
-                        </div>
-                    </div>
-                    <div class="grid-img-conciertos">
-                        <img src="images/productos/cd/slayer-repentless.jpg"
-                            alt="Concierto Halloween 02 de Octubre 2022" class="img-conciertos">
-                        <div>
-                            <button id="comprar">Comprar</button>
-                            &nbsp;
-                            <button>Agregar al carrito</button>
-                        </div>
-                    </div>
-                    <div class="grid-img-conciertos">
-                        <img src="images/productos/cd/judas-priest-painkiller.jpg"
-                            alt="Concierto Nightwish 16 de Octubre 2022" class="img-conciertos">
-                        <div>
-                            <button id="comprar">Comprar</button>
-                            &nbsp;
-                            <button>Agregar al carrito</button>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">Cancelar compra</button>
+                                <button type="button" class="btn btn-success btn-sm" data-bs-dismiss="modal">Finalizar compra</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>-->
-        <!-- Fin Seccion CD -->
 
-        <!-- Inicio Seccion DVD -->
-        <!--<section>
-            <div class="section-conciertos">
-                <h1>
-                    DVD
-                </h1>
-                <div class="grid-conciertos">
-                    <div class="grid-img-conciertos">
-                        <img src="images/productos/dvd/slayer-repentless-killogy.jpg"
-                            alt="Concierto Canibal Corpse 17 de Mayo 2022" class="img-conciertos">
-                        <div>
-                            <button onclick="comprar();">Comprar</button>
-                            &nbsp;
-                            <button>Agregar al carrito</button>
-                        </div>
-                    </div>
-                    <div class="grid-img-conciertos">
-                        <img src="images/productos/dvd/judas-priest-live-in-london.jpeg"
-                            alt="Concierto Horcas 06 de Agosto 2022" class="img-conciertos">
-                        <div>
-                            <button onclick="comprar();">Comprar</button>
-                            &nbsp;
-                            <button>Agregar al carrito</button>
-                        </div>
-                    </div>
-                    <div class="grid-img-conciertos">
-                        <img src="images/productos/dvd/slayer-repentless-killogy.jpg"
-                            alt="Concierto Halloween 02 de Octubre 2022" class="img-conciertos">
-                        <div>
-                            <button onclick="comprar();">Comprar</button>
-                            &nbsp;
-                            <button>Agregar al carrito</button>
-                        </div>
-                    </div>
-                    <div class="grid-img-conciertos">
-                        <img src="images/productos/dvd/judas-priest-live-in-london.jpeg"
-                            alt="Concierto Nightwish 16 de Octubre 2022" class="img-conciertos">
-                        <div>
-                            <button onclick="comprar();">Comprar</button>
-                            &nbsp;
-                            <button>Agregar al carrito</button>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </section>-->
-        <!-- Fin Seccion DVD -->
-
-        <!-- Inicio Seccion VINILO -->
-        <!--<section>
-            <div class="section-conciertos">
-                <h1>
-                    VINILO
-                </h1>
-                <div class="grid-conciertos">
-                    <div class="grid-img-conciertos">
-                        <img src="images/productos/vinilos/judas-priest-killing-machine.jpg"
-                            alt="Concierto Canibal Corpse 17 de Mayo 2022" class="img-conciertos">
-                        <div>
-                            <button onclick="comprar();">Comprar</button>
-                            &nbsp;
-                            <button>Agregar al carrito</button>
-                        </div>
-                    </div>
-                    <div class="grid-img-conciertos">
-                        <img src="images/productos/vinilos/judas-priest-killing-machine.jpg"
-                            alt="Concierto Horcas 06 de Agosto 2022" class="img-conciertos">
-                        <div>
-                            <button onclick="comprar();">Comprar</button>
-                            &nbsp;
-                            <button>Agregar al carrito</button>
-                        </div>
-                    </div>
-                    <div class="grid-img-conciertos">
-                        <img src="images/productos/vinilos/judas-priest-killing-machine.jpg"
-                            alt="Concierto Halloween 02 de Octubre 2022" class="img-conciertos">
-                        <div>
-                            <button onclick="comprar();">Comprar</button>
-                            &nbsp;
-                            <button>Agregar al carrito</button>
-                        </div>
-                    </div>
-                    <div class="grid-img-conciertos">
-                        <img src="images/productos/vinilos/judas-priest-killing-machine.jpg"
-                            alt="Concierto Nightwish 16 de Octubre 2022" class="img-conciertos">
-                        <div>
-                            <button onclick="comprar();">Comprar</button>
-                            &nbsp;
-                            <button>Agregar al carrito</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>-->
-        <!-- Fin Seccion VINILO -->
-
-        <!-- Inicio Seccion BLUERRAY -->
-        <!--<section>
-            <div class="section-conciertos">
-                <h1>
-                    BLUERRAY
-                </h1>
-                <div class="grid-conciertos">
-                    <div class="grid-img-conciertos">
-                        <img src="images/productos/bluerray/metallica-the-big-4-live-from-sofia-bulgaria.jpg"
-                            alt="Concierto Canibal Corpse 17 de Mayo 2022" class="img-conciertos">
-                        <div>
-                            <button onclick="comprar();">Comprar</button>
-                            &nbsp;
-                            <button>Agregar al carrito</button>
-                        </div>
-                    </div>
-                    <div class="grid-img-conciertos">
-                        <img src="images/productos/bluerray/metallica-the-big-4-live-from-sofia-bulgaria.jpg"
-                            alt="Concierto Horcas 06 de Agosto 2022" class="img-conciertos">
-                        <div>
-                            <button onclick="comprar();">Comprar</button>
-                            &nbsp;
-                            <button>Agregar al carrito</button>
-                        </div>
-                    </div>
-                    <div class="grid-img-conciertos">
-                        <img src="images/productos/bluerray/metallica-the-big-4-live-from-sofia-bulgaria.jpg"
-                            alt="Concierto Halloween 02 de Octubre 2022" class="img-conciertos">
-                        <div>
-                            <button onclick="comprar();">Comprar</button>
-                            &nbsp;
-                            <button>Agregar al carrito</button>
-                        </div>
-                    </div>
-                    <div class="grid-img-conciertos">
-                        <img src="images/productos/bluerray/metallica-the-big-4-live-from-sofia-bulgaria.jpg"
-                            alt="Concierto Nightwish 16 de Octubre 2022" class="img-conciertos">
-                        <div>
-                            <button onclick="comprar();">Comprar</button>
-                            &nbsp;
-                            <button>Agregar al carrito</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>-->
-        <!-- Fin Seccion BLUERRAY -->
+        </section>
+        <!-- Fin Seccion Productos -->
     </main>
     <!-- Fin Secciones -->
 
@@ -335,9 +156,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>
 </body>
 
 </html>
